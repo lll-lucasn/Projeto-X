@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Página 2</a></li>
+                <li><a href="page3.html">Página 3</a></li>
+                <li><a href="page4.html">Página 4</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        </header>
+    <div id="welcome-box">
+        <h1>Bem-vindo ao site!</h1>
+        <p>Digite seu nome para continuar:</p>
+        <input type="text" id="name-input" placeholder="Seu nome aqui">
+        <button id="submit-btn">Enviar</button>
+        <p id="welcome-message" style="display:none; margin-top: 15px;"></p>
+      </div>
+      <script>
+        const input = document.getElementById('name-input');
+        const button = document.getElementById('submit-btn');
+        const message = document.getElementById('welcome-message');
+    
+        button.addEventListener('click', () => {
+          const name = input.value.trim();
+          if (name) {
+            message.textContent = `Bem-vindo, ${name}!`;
+            message.style.display = 'block';
+          } else {
+            alert('Por favor, digite um nome válido.');
+          }
+        });
+      </script>
+</body>
+</html>

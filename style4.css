@@ -1,0 +1,113 @@
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Menu principal */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: #ffeb3b;
+  }
+  
+  /* Efeito de barra animada */
+  .menu li::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #ffeb3b;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .menu li:hover::after {
+    width: 100%;
+  }
+  
+  /* Botão de menu responsivo */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #007bff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .menu.show {
+      display: flex;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .menu-toggle {
+      display: block;
+      color: white;
+    }
+  }
+  
+#text{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 1.3em;
+}

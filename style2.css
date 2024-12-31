@@ -1,0 +1,82 @@
+#neon{
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(10, 243, 185), blue, green, yellow, orange, red);
+background-clip: text;
+display: inline;
+color: transparent;
+animation: animated 5s linear infinite;
+font-size: 3em;
+}
+
+@keyframes animated{
+    to {background-position-x:161px}
+    }
+
+    
+h1{
+    font-size: 50px;
+    color: rgb(250, 247, 247);
+}
+
+#res{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-color: black;
+}
+
+#txtn1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 2em;
+}
+
+#txtn2{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 2em;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #d17701;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+#menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#menu a:hover {
+    background-color: #ff5100;
+    color: #fff;
+    border-radius: 2em;
+}
+   
+p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#soma{
+    font-size: 30px;
+    color: rgb(3, 0, 0);
+    border-radius: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

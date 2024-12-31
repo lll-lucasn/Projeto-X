@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto X</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1 id="neon">Somando Valores</h1>
+<header>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Página 2</a></li>
+            <li><a href="page3.html">Página 3</a></li>
+            <li><a href="page4.html">Página 4</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+     <input type="button" id="soma" value="somar" onclick="somar()">
+     <div id="res"> 
+     Resultado
+     </div>
+     <script>
+function somar(){
+    var tn1 = window.document.getElementById('txtn1')
+    var tn2 = window.document.getElementById('txtn2')
+    var res = window.document.getElementById('res')
+var n1 = Number(tn1.value)
+var n2 = Number(tn2.value)
+var s = n1 + n2
+res.innerHTML = `A Soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+}
+     </script>
+
+<p>Esse site como um todo é basicamente um resumo e teste de algumas funcionalidades e funções
+    do HTML, CSS e JavaScript. A ideia é que você possa ver como cada uma dessas linguagens
+    interage com a outra e como podemos criar sites dinâmicos e interativos com elas.
+    Espero que você tenha gostado do site e que tenha aprendido algo novo com ele!
+</p>
+
+
+    </body>
+    </html>
